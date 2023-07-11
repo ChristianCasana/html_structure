@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- title - entre 55 y 65 caracteres -->
+  <title>Aprendiendo HTML</title>
+  <!-- description - no más de 165 caracteres -->
+  <meta name="description" content="Aprendiendo los fundamentos de HTML" />
+  <style>
+    h2 {
+      color: orangered;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <h2>Aprendiendo HTML</h2>
+  <p>Hola, escribiendo mi primer documento HTML</p>
+  <p>Aprendiendo sobre Diseño Web</p>
+  <hr>
+  <h2>Encabezados HTML</h2>
+  <h1>Encabezado de Nivel 1 - Sólo puede existir un H1 por documento HTML</h1>
+  <h2>Encabezado de Nivel 2</h2>
+  <h3>Encabezado de Nivel 3</h3>
+  <h4>Encabezado de Nivel 4</h4>
+  <h5>Encabezado de Nivel 5</h5>
+  <h6>Encabezado de Nivel 6</h6>
+  <hr>
+  <h2>Etiquetas de Texto Básicas</h2>
+  <p>Un párrafo</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eveniet, adipisci aliquam fugiat unde
+    voluptatibus consequatur a libero enim. Dolor sit eveniet, ut dolores minima sunt harum quisquam iusto quo?s
+  </p>
+  <p>
+    Palabras en: <b>negrita</b>, <i>itálica</i>, <u>subrayado</u>,
+    e=mc<sup>2</sup>, H<sub>2</sub>O, <mark>marcatexto</mark>,
+    <small>letras pequeñas</small>
+  </p>
+  <hr>
+  <h2>Etiquetas de Texto Semánticas</h2>
+  <p>
+    <strong>Este texto es importante</strong>,
+    <em>Este texto hace enfasis</em>
+  </p>
+  <blockquote>Yo solo sé, que no se nada</blockquote>
+  <cite>Sócrates</cite>
+  <hr>
+  <h2>Etiquetas de Saltos</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Labore nulla impedit corrupti vitae consequatur nam
+    quasi molestias doloribus aut error, modi nesciunt reprehenderit,<br> consectetur nostrum
+    quaerat repellat maiores praesentium. Veniam.
+  </p>
+  <hr>
+  <h2>Etiquetas de Formateo</h2>
+  <p>
+  <pre>
+        Tareas por Hacer
+        -HTML
+          -Terminar de grabar las secciones de este curso.
+          -Editaar en un solo video.
+        -CSS
+          -Comenzar a grabar secciones CSS.
+          -Editaar en un solo video.
+      </pre>
+  </p>
+  <p>
+    <code>Este texto está en formato de código</code>
+  </p>
+  <p>
+  <pre>
+        <code>
+          import React from "react";
+          import Title from "./Title";
+
+          function App {
+            return &lt;Title /&gt;
+          }
+        </code>
+      </pre>
+  </p>
+  <hr>
+  <h2>Etiquetas Semánticas Estructurales</h2>
+  <div>Es una etiqueta contenedora que no tiene semántica</div>
+  <header>header - Cabecera de un sitio web o de una sección</header>
+  <main>main - Define la sección principal del documento, sólo puede existir una etiqueta main por documento</main>
+  <footer>footer - Pie de página de un sitio web o de una sección</footer>
+  <nav>nav - Representa una navegación</nav>
+  <article>article - Representa una sección autocontenida(que por sí sola se explica)</article>
+  <aside>aside - Representa contenido complementario o secundario</aside>
+  <section>section - Representa una sección de contenido genérico</section>
+  <address>address - Representa una información de contacto</address>
+  <hr>
+  <h2>Etiquetas de Bloque vs Etiquetas de Línea</h2>
+  <div style="background-color: yellow; color: red;">La etiqueta de bloque por excelencia es la div, una etiqueta de
+    bloque es aquella que genera saltos de línea con sus etiquetas hermanas.</div>
+  <span style="background-color: greenyellow;">La etiqueta de línea por excelencia es la span, una etiqueta de línea
+    solo ocupa el espacio necesario que tiene su contenido.</span>
+  <span>Hola soy otra span</span>
+  <hr>
+  <h2>Estilos CSS en HTML</h2>
+  <hr>
+  <h2>Scripts en HTML</h2>
+  <hr>
+  <h2>Imágenes</h2>
+  <img src="./src/Periodic table html.jpg.jpg" alt="Tabla de los elementos HTML" width="700px" height="400px">
+  <img src="./src/Binance.png.png" alt="Binance" width="900px">
+  <img src="./src/Barca_gira.gif" alt="Barca_gira">
+  <img src="./src/cat-face.svg" alt="cat-face">
+  <hr>
+  <h2>Figuras</h2>
+  <figure>
+    <img src="./src/Periodic table html.jpg.jpg" alt="Tabla de los elementos HTML" width="700px" height="400px">
+    <figcaption>Tabla de los elementos HTML</figcaption>
+  </figure>
+  <hr>
+  <h2>Listas ordenadas</h2>
+  <h3>Las Estaciones del Año</h3>
+  <ol>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <ol start="3">
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <ol reversed>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <ol type="I">
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <hr>
+  <h2>Listas Desordenadas</h2>
+  <h3>Cosas por Hacer</h3>
+  <ul>
+    <li>Terminar de grabar los fragmentos del curso de HTML</li>
+    <li>Editar el video final</li>
+    <li>Subirlo a Youtube</li>
+  </ul>
+  <ul type="circle">
+    <li>Terminar de grabar los fragmentos del curso de HTML</li>
+    <li>Editar el video final</li>
+    <li>Subirlo a Youtube</li>
+  </ul>
+  <ul type="square">
+    <li>Terminar de grabar los fragmentos del curso de HTML</li>
+    <li>Editar el video final</li>
+    <li>Subirlo a Youtube</li>
+  </ul>
+  <hr>
+  <h2>Listas de Definición</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+    <dt>CSS</dt>
+    <dd>Es un lenguaje de definición que da estilos al código HTML</dd>
+    <dt>Javascript</dt>
+    <dd>Es el lenguaje de la web</dd>
+  </dl>
+  <hr>
+  <h2>Tablas</h2>
+  <table>
+    <tr>
+      <td>Nombre</td>
+      <td>Constelación</td>
+      <td>Tipo</td>
+    </tr>
+    <tr>
+      <td>Ikki</td>
+      <td>Fénix</td>
+      <td>Bronce</td>
+    </tr>
+    <tr>
+      <td>Shaina</td>
+      <td>Ofiuco</td>
+      <td>Plata</td>
+    </tr>
+    <tr>
+      <td>Saga</td>
+      <td>Gémimnis</td>
+      <td>Dorado</td>
+    </tr>
+  </table>
+  <br><br>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Tabla de los Santos de Athena</th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Constelación</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ikki</td>
+        <td>Fénix</td>
+        <td>Bronce</td>
+      </tr>
+      <tr>
+        <td>Mistry</td>
+        <td>Lagarto</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Saga</td>
+        <td>Gémimnis</td>
+        <td>Dorado</td>
+      </tr>
+      <tr>
+        <td>Shaina</td>
+        <td rowspan="2">Ofiuco</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Odiseo</td>
+        <td>Dorado</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3"><small>Saint Seiya fue creado por el maestro Masami Kurumada</small></th>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <h2>Enlaces</h2>
+  <a href="./hola.html">Hacia la página Hola</a>
+  <a href="https://colorhunt.co/" target="_blank" rel="nofollow">VIsita ColorHunt</a>
+  <br>
+  <a href="https://css.gg/" target="_blank">
+    <img src="./src/gray-cat.svg" alt="Ir a ColorHunt" width="40px" height="40px">
+  </a>
+  <a href="https:Youtube.com" target="_blank">
+    <img src="./src/youtube.svg" alt="Ir a Youtube">
+  </a>
+
+  <script>
+    console.log("Hola estamos aprendiendo HTML")
+  </script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
