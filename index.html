@@ -41,6 +41,8 @@
     <li><a href="index.html#elementos_interactivos">Elementos Interactivos</a></li>
     <li><a href="index.html#audio_video">Audio y Video</a></li>
     <li><a href="index.html#iframes">Iframes</a></li>
+    <li><a href="index.html#formularios">Formularios</a></li>
+    <li><a href="index.html#data_attributes">Data Attributes</a></li>
   </ul>
   <hr>
   <h2 id="encabezados">Encabezados HTML</h2>
@@ -350,7 +352,151 @@
     allowfullscreen></iframe>
   <br>
   <a href="index.html#inicio">⏫</a>
-
+  <hr>
+  <h2 id="formularios">Formularios</h2>
+  <h3>Elementos de Formularios</h3>
+  <input type="text">
+  <br>
+  <input type="checkbox">
+  <br>
+  <input type="radio">
+  <br>
+  <input type="date">
+  <br>
+  <input type="color">
+  <br>
+  <input type="button" value="Botón">
+  <br>
+  <input type="submit">
+  <br>
+  <input type="reset">
+  <br>
+  <input type="file">
+  <br>
+  <input type="file" multiple>
+  <br>
+  <input type="hidden" name="idioma" value="es">
+  <br>
+  <input type="email">
+  <br>
+  <input type="number">
+  <br>
+  <input type="tel">
+  <br>
+  <input type="password">
+  <br>
+  <input type="search">
+  <br>
+  <textarea name="" id="" cols="50" rows="5"></textarea>
+  <br>
+  <select name="" id="">
+    <option value="">HTML</option>
+    <option value="">CSS</option>
+    <option value="">Javascript</option>
+    <option value="">PHP</option>
+    <option value="">Python</option>
+  </select>
+  <br>
+  <select name="" id="" multiple>
+    <option value="">HTML</option>
+    <option value="">CSS</option>
+    <option value="">Javascript</option>
+    <option value="">PHP</option>
+    <option value="">Python</option>
+  </select>
+  <br>
+  <input type="text" value="Christian_Casaña" readonly disabled>
+  <br>
+  <input type="text" placeholder="Escribe tu nombre ">
+  <br>
+  <h3>Ejemplo de Formularios</h3>
+  <h4>Formulario de Login</h4>
+  <form action="https://mail.google.com/mail/u/0/?" method="post" autocomplete="off">
+    <label for="usuario">Usuario:</label>
+    <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$"
+      title="El campo solo acepta letras" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Escribe tu email">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Escribe tu password" required>
+    <br>
+    <input type="submit">
+    <br>
+    <input type="reset">
+  </form>
+  <h4>Selects, Radios y Checkbox</h4>
+  <form>
+    <p>Elige tu idioma:</p>
+    <select name="idioma" required>
+      <option value="" selected>Elige una opción</option>
+      <option value="es">Español</option>
+      <option value="en">Inglés</option>
+      <option value="fr">Francés</option>
+      <option value="it">Italiano</option>
+      <option value="pt">Portugués</option>
+    </select>
+    <p>Elige tu lenguaje de programación favorito:</p>
+    <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+    <label for="radio-js">JavaScript</label>
+    <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
+    <label for="radio-py">Python</label>
+    <input type="radio" name="lenguaje" id="radio-php" value="php">
+    <label for="radio-php">PHP</label>
+    <p>Elige tus Intereses:</p>
+    <label>
+      <input type="checkbox" name="intereses" value="deportes">
+      Deportes
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="finanzas" checked>
+      Finanzas
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="salud">
+      Salud
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="politica" checked>
+      Política
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="ecologia">
+      Ecología
+    </label>
+    <p>
+      <label>
+        <input type="checkbox" name="terminos" required>
+        ¿Aceptas términos y condiciones?
+      </label>
+    </p>
+    <input type="submit">
+    <input type="reset">
+  </form>
+  <h4>Formulario de Contacto</h4>
+  <form action="https://formsubmit.co/inciochristian@gmail.com" method="POST">
+    <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+      title="Nombre sólo acepta letras y espacios en blanco" required>
+    <br>
+    <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+      title="Formato de correo inválido" required>
+    <br>
+    <textarea name="comentarios" cols="30" rows="10" required></textarea>
+    <br>
+    <input type="submit">
+  </form>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+  <h2 id="data_attributes">Data Attributes</h2>
+  <ul>
+    <li data-id="1" data-name="sring">Primavera</li>
+    <li data-id="2" data-name="summer">Verano</li>
+    <li data-id="3" data-name="autumm">Otoño</li>
+    <li data-id="4" data-name="wintern">Invierno</li>
+  </ul>
+  <a href="index.html#inicio">⏫</a>
   <script>
     console.log("Hola estamos aprendiendo HTML")
   </script>
